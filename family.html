@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>family</title>
+<body background="a3.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 79px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: monospace;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+</style>
+
+<style>
+h1 {
+  font-family: monotype corsiva;
+  font-size: 300%;
+}
+
+h2 {
+  font-family: monotype corsiva;
+  font-size: 200%;
+
+}
+p  {
+  font-family: verdana;
+  font-size: 100%;
+}
+</style>
+
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+<center><img src="a1.png" style= width="300" height="200"></center>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="family.html">Family</a>
+  <a href="education.html">Education</a>
+  <a href="experiences.html">Experiences</a>
+  <a href="gallery.html">Gallery</a>
+</div>
+
+<center>
+<h2>MY BIGGEST SUPPORTER</h2>
+<p>~ A little bit of crazy, a little bit of loud, a whole lot of a love~</p>
+<hr>
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="f1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="f2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="f3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="f4.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="f5.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="f6.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<br>
+
+<table style="width:50%" "height:40%">
+  <tr>
+    <td><div style="background-color:#99ffcc;color:black;padding:10px;"><img src="d1.jpg" style="width:50%"><b><br><br>Abd Khalid Razalli</b><br>
+      <ul style="list-style-type:none;">
+        <li>51 Years old</li>
+        <li>A workshop's supervisor</li>
+        <li>A good listener</li>
+        <li>Bundle lover</li>
+        <li>Short-tempered (if we make mistakes)</li>
+        <li>Strict</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><div style="background-color:#99ffcc;color:black;padding:10px;"><img src="d2.jpg" style="width:50%"><br><br><b>Salbi Mohd Jamil</b><br>
+      <ul style="list-style-type:none;">
+        <li>46 Years old</li>
+        <li>Photogenic</li>
+        <li>Strict</li>
+        <li>The best cooks</li>
+        <li>Knows all my secrets and also share her problems with me</li>
+        <li>The best adviser</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><div style="background-color:#99ffcc;color:black;padding:10px;"><img src="d3.jpg" style="width:50%"><br><br><b>Nur Khaleeda Izzaty</b><br>
+      <ul style="list-style-type:none;">
+        <li>24 Years old</li>
+        <li>A site engineer</li>
+        <li>An athlete (Netball, Frisbee and Badminton)</li>
+        <li>Scaredy cat</li>
+        <li>Have the best style in family</li>
+        <li>Generous but in return, we need to obey her</li>
+      </ul>
+   </td>
+  </tr>
+  <tr>
+    <td><div style="background-color:#99ffcc;color:black;padding:10px;"><img src="d4.jpg" style="width:50%"><br><br><b>Nur Khaleeda Allysa</b><br>
+      <ul style="list-style-type:none;">
+        <li>17 Years old</li>
+        <li>SPM Candidates</li>
+        <li>Emotional (maybe because she is a teenager)</li>
+        <li>Loves to eat anything aside from rice</li>
+        <li>My personal stylist</li>
+        <li>A great OOTD's photographer</li>
+      </ul>
+   </td>
+  </tr>
+  <tr>
+    <td><div style="background-color:#99ffcc;color:black;padding:10px;"><img src="d5.jpg" style="width:50%"><br><br><b>Nur Khaleeda Alyanis</b><br>
+      <ul style="list-style-type:none;">
+        <li>11 Years old</li>
+        <li>Photogenic</li>
+        <li>Loves to eat</li>
+        <li>Cats lover</li>
+        <li>Crybaby</li>
+        <li>Caring</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><div style="background-color:#99ffcc;color:black;padding:10px;"><img src="d6.jpg" style="width:50%"><br><br><b>Muhammad Firaaz Thaqiff</b><br>
+      <ul style="list-style-type:none;">
+        <li>8 Years old</li>
+        <li>Chubby</li>
+        <li>Loves to eat in the middle of the night</li>
+        <li>Likes to collect Tobot</li>
+        <li>Loves to watch cartoon</li>
+        <li>Always ask us to buy his robot at Shoppe</li>
+      </ul>
+    </td>
+  </tr></tr>
+  </table>
+</center>
+</body>
+</html>
